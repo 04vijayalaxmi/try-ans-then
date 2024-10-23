@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const promiseObj= new Promise((resolve, reject)=>{
+            let req=false
+            if(req==true){
+                resolve("Request Succeess");
+            }else{
+                reject("Request Rejected");
+            }
+        }).then(
+            (value)=>{console.log(value);
+
+            }).catch(
+                (error)=>{console.log(error);
+
+                }).finally(
+                    ()=>{console.log("Cleaned")
+
+            });
+    //try {
+    //let obj;
+    //console.log(obj.property); // This will throw a TypeError
+    // } catch (error) {
+    //if (error instanceof TypeError) {
+     //   console.error("TypeError caught:", error.message);
+    //} else {
+      //  console.error("An unexpected error occurred:", error.message);
+    //}
+    //}
+ 
+    </script>
+    <script src="fetch.js"></script>
+</body>
+</html>
